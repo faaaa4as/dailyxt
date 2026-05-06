@@ -1,4 +1,4 @@
-# Content Hub Pack
+# dailyxt
 
 ![cover](dailyxt_cover.png)
 
