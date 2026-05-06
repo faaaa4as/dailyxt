@@ -127,3 +127,10 @@ delivery:
 ```bash
 PYTHONPATH=src .venv/bin/python -m pytest tests/ -q
 ```
+
+## Roadmap
+
+[] X integration (articles only)
+[] Polymarket newspaper (custom markets selection or Breaking section)
+[] Emails
+[] Full TUI onboarding : BYOK, source toggles, more ?
