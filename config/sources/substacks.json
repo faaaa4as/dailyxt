@@ -1,0 +1,11 @@
+{
+  "publications": [
+    {
+      "name": "Example Publication",
+      "base_url": "https://example.substack.com",
+      "feed_url": "https://example.substack.com/feed",
+      "priority": 1,
+      "active": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.DS_Store
+.env
+config/config.yaml
+data/
+output/
+output_*/
+*.epub
+*.sqlite3
+tools/content-manager-tui/target/

@@ -1,0 +1,42 @@
+timezone: Europe/Paris
+schedule: "30 6 * * *"
+
+substack:
+  source_file: "./config/sources/substacks.json"
+
+youtube:
+  source_file: "./config/sources/youtube_playlists.json"
+  max_videos_per_day: 4
+
+hackernews:
+  candidate_count: 30
+  final_count: 10
+  min_relevance_score: 14.0
+  min_selected_items: 3
+  personality_file: "./config/personality/hackernews.md"
+
+delivery:
+  method: "local_only"
+  target_path: "."
+  verify_copy: true
+  fallback_notify: "telegram"
+  # For Xteink/CrossPoint delivery, set method: "crosspoint" and configure:
+  # host: "crosspoint.local"
+  # fallback_hosts: []
+  # remote_base_path: "/Daily"
+  # retry_interval_seconds: 300
+  # retry_timeout_minutes: 0
+
+output:
+  root_dir: "."
+  folder_prefix: "output"
+  folder_date_format: "%d-%m-%Y"
+
+runtime:
+  db_path: "./data/runtime/content_hub_pack.sqlite3"
+  staging_dir: "./data/staging"
+
+ai:
+  provider: "openrouter"
+  model: "nvidia/nemotron-3-super-120b-a12b:free"
+  base_url: "https://openrouter.ai/api/v1"

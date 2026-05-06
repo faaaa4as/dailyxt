@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "content-hub-pack"
+version = "0.1.0"
+description = "Daily reading pack generator with OpenRouter-backed summaries and a Ratatui source manager."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "beautifulsoup4",
+  "ebooklib",
+  "feedparser",
+  "python-dotenv",
+  "PyYAML",
+  "requests",
+  "youtube-transcript-api",
+  "yt-dlp",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

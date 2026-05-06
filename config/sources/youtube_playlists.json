@@ -1,0 +1,9 @@
+{
+  "playlists": [
+    {
+      "name": "Primary Playlist",
+      "playlist_id": "PL_EXAMPLE_PLAYLIST_ID",
+      "active": true
+    }
+  ]
+}
