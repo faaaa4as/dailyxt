@@ -3,6 +3,8 @@ title: dailyxt
 summary: automated daily brief, sent to Xteink e-readers.
 status: experimental
 repo: https://github.com/faaaa4as/dailyxt
+media:
+  - dailyxt_cover.png
 ---
 ## Why
 I wanted a way to stay in touch with the ecosystems and news that I like.
